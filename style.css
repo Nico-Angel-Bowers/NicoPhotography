@@ -1,0 +1,84 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: "acumin-pro", sans-serif; /* CHANGE if Adobe shows a different name */
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    padding: 90px 40px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    font-size: clamp(40px, 9vw, 72px);
+}
+
+/* Navigation */
+nav {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 6px 0;
+}
+
+/* Main */
+main {
+    padding: 80px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    padding: 24px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    header {
+        padding: 55px 20px;
+    }
+
+    header h1 {
+        letter-spacing: 0.28em;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 30px;
+        max-width: 320px;
+        margin: 36px auto 0;
+    }
+
+    nav a {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+}
