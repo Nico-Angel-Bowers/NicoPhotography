@@ -1,38 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Nico's Photography</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.typekit.net/lfj6wzm.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Reset */
+* {
+    box-sizing: border-box;
+}
 
-<header>
-    <h1>Nico's Photography</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 
-<section class="front-gallery">
-    <div class="photo-slot">
-        <img src="photos/photo1.jpg" alt="Photo 1">
-    </div>
-    <div class="photo-slot">
-        <img src="photos/photo2.jpg" alt="Photo 2">
-    </div>
-    <div class="photo-slot">
-        <img src="photos/photo3.jpg" alt="Photo 3">
-    </div>
-</section>
+/* Base */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
 
-<footer>
-    © 2026 Nico Photography
-</footer>
+/* Header */
+header {
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
 
-</body>
-</html>
+header h1 {
+    font-family: "reiher-headline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Work in Progress */
+.work-in-progress {
+    font-family: "reiher-headline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: red;
+    margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+/* Front image */
+.front-gallery {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.photo-slot {
+    max-width: 720px;
+    width: 100%;
+}
+
+.photo-slot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+    font-size: 12px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        letter-spacing: 0.22em;
+        font-size: 22px;
+    }
+
+    .work-in-progress {
+        font-size: 11px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+}
