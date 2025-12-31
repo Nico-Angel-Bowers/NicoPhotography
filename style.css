@@ -113,8 +113,9 @@ nav a {
 .featured h2 {
     font-family: "reiher-headline", sans-serif;
     font-weight: 400;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 60px;
 }
 
@@ -123,6 +124,29 @@ nav a {
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+}
+
+/* Featured photographer boxes */
+.featured-box {
+    border: 1px solid #000000;
+    padding: 30px 20px;
+    min-width: 180px;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+}
+
+.featured-box:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.featured-box.placeholder {
+    border-color: #e0e0e0;
+    color: #999999;
 }
 
 .featured-card {
@@ -156,6 +180,19 @@ nav a {
 
 .featured-card.placeholder .featured-name {
     margin: 0;
+}
+
+/* About page photo */
+.about-photo {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 60px;
+}
+
+.about-photo img {
+    width: 180px;
+    height: auto;
+    filter: grayscale(100%);
 }
 
 /* Footer */
