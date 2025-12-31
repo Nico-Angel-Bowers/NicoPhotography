@@ -1,0 +1,133 @@
+/ * Base reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    background-color: #ffffff;
+    color: #111;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.work-in-progress {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: red;
+    letter-spacing: 0.08em;
+}
+
+/* Navigation */
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #111;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content wrapper */
+.content {
+    max-width: 720px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* About image */
+.about-photo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-photo img {
+    width: 220px;
+    max-width: 100%;
+    filter: grayscale(100%);
+}
+
+/* Featured section */
+.featured {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+/* Featured grid */
+.featured-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.featured-box {
+    width: 220px;
+    height: 280px;
+    border: 1px solid #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #111;
+    font-size: 1.1rem;
+}
+
+.featured-box:hover {
+    background-color: #f3f3f3;
+}
+
+.placeholder {
+    opacity: 0.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .featured-box {
+        width: 180px;
+        height: 240px;
+    }
+}
