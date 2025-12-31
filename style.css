@@ -107,16 +107,19 @@ nav a {
 /* Featured photographers */
 .featured {
     padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
 }
 
 .featured h2 {
     font-family: "reiher-headline", sans-serif;
     font-weight: 400;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 60px;
+    font-size: 24px;
+    margin-bottom: 50px;
 }
 
 .featured-grid {
@@ -190,8 +193,10 @@ nav a {
 }
 
 .about-photo img {
-    width: 180px;
+    width: 240px;
+    max-width: 90%;
     height: auto;
+    display: block;
     filter: grayscale(100%);
 }
 
