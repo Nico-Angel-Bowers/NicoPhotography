@@ -1,133 +1,56 @@
-/* Base reset */
-* {
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Nico Photography</title>
 
-body {
-    margin: 0;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    background-color: #ffffff;
-    color: #111;
-}
+    <link rel="stylesheet" href="https://use.typekit.net/lfj6wzm.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* Header */
-header {
-    text-align: center;
-    padding: 40px 20px 20px;
-}
+<header>
+    <h1>Nico’s Photography</h1>
+    <div class="work-in-progress">Work In Progress</div>
 
-header h1 {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 600;
-}
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-.work-in-progress {
-    margin-top: 6px;
-    font-size: 0.9rem;
-    color: red;
-    letter-spacing: 0.08em;
-}
+<main>
+    <section class="content">
+        <h2>About</h2>
 
-/* Navigation */
-nav {
-    margin-top: 25px;
-}
+        <div class="about-photo">
+            <img src="images/photo1.jpg" alt="Portrait of Nico Bowers">
+        </div>
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #111;
-    font-size: 1rem;
-}
+        <p>
+            I am passionate about creating a space for freedom of expression through photography.
+            Based in Exeter, New Hampshire, this site began as a way to share my own work in a
+            clean and intentional environment.
+        </p>
 
-nav a:hover {
-    text-decoration: underline;
-}
+        <p>
+            I hope Nico’s Photography grows into more than just a personal portfolio — becoming
+            a platform where other photographers can share their perspectives and creative work.
+        </p>
 
-/* Main content wrapper */
-.content {
-    max-width: 720px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
+        <p>
+            I was born in New York City above my parents’ restaurant, Corner Social.
+            In 2026, I created this site to give photography a space that feels calm,
+            honest, and thoughtfully curated.
+        </p>
+    </section>
+</main>
 
-.content h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
+<footer>
+    © 2026 Nico Photography
+</footer>
 
-/* About image */
-.about-photo {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.about-photo img {
-    width: 220px;
-    max-width: 100%;
-    filter: grayscale(100%);
-}
-
-/* Featured section */
-.featured {
-    max-width: 1000px;
-    margin: 80px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.featured h2 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin-bottom: 40px;
-}
-
-/* Featured grid */
-.featured-grid {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.featured-box {
-    width: 220px;
-    height: 280px;
-    border: 1px solid #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #111;
-    font-size: 1.1rem;
-}
-
-.featured-box:hover {
-    background-color: #f3f3f3;
-}
-
-.placeholder {
-    opacity: 0.6;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* Mobile adjustments */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2.2rem;
-    }
-
-    .featured-box {
-        width: 180px;
-        height: 240px;
-    }
-}
+</body>
+</html>
